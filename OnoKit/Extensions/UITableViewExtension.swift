@@ -27,6 +27,10 @@ public extension UITableView {
         self.sectionFooterHeight = UITableView.automaticDimension
         self.estimatedSectionFooterHeight = 0
 
+        if #available(iOS 15.0, *) {
+            self.sectionHeaderTopPadding = 0
+        }
+
         for identifier in identifiers {
             if let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
                 let namespace = projectName.replacingOccurrences(of: "-", with: "_")
