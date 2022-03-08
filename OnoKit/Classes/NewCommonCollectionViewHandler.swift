@@ -13,7 +13,7 @@ open class NewCommonCollectionViewHandler: NSObject, UICollectionViewDelegate, U
     typealias DataSource = UICollectionViewDiffableDataSource<AnyHashable, AnyHashable>
     typealias Snapshot = NSDiffableDataSourceSnapshot<AnyHashable, AnyHashable>
 
-    let collectionView: UICollectionView
+    public let collectionView: UICollectionView
 
     public init(_ collectionView: UICollectionView) {
         self.collectionView = collectionView
