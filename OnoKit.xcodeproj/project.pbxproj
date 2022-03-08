@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76FBC99427D7B864005FE78E /* NewCommonCollectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC99327D7B864005FE78E /* NewCommonCollectionViewHandler.swift */; };
 		770456EC251522F1006CC071 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 770456EA251522F1006CC071 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7704570525152373006CC071 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F625152372006CC071 /* UINavigationControllerExtension.swift */; };
 		7704570625152373006CC071 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770456F725152372006CC071 /* UIButtonExtension.swift */; };
@@ -83,6 +84,7 @@
 		55A9E3F1689CD6C95BE0112C /* Pods_OnoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		678736D52C2FCD745E0D3315 /* Pods-OnoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoKit.debug.xcconfig"; path = "Target Support Files/Pods-OnoKit/Pods-OnoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		7020874F68DD9D1C4D9477CE /* Pods-OnoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnoKit.release.xcconfig"; path = "Target Support Files/Pods-OnoKit/Pods-OnoKit.release.xcconfig"; sourceTree = "<group>"; };
+		76FBC99327D7B864005FE78E /* NewCommonCollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCommonCollectionViewHandler.swift; sourceTree = "<group>"; };
 		770456E7251522F1006CC071 /* OnoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		770456EA251522F1006CC071 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		770456EB251522F1006CC071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				77045716251523BD006CC071 /* CommonButton.swift */,
 				77045718251523BD006CC071 /* CommonCollectionView.swift */,
 				77045717251523BD006CC071 /* CommonCollectionViewHandler.swift */,
+				76FBC99327D7B864005FE78E /* NewCommonCollectionViewHandler.swift */,
 				7704571D251523BD006CC071 /* CommonDateFormatter.swift */,
 				7704571C251523BD006CC071 /* CommonImageView.swift */,
 				7704571F251523BE006CC071 /* CommonLabel.swift */,
@@ -503,6 +506,7 @@
 				7704571125152373006CC071 /* UILabelExtension.swift in Sources */,
 				774D019B251B0541005F35B2 /* UIFontExtension.swift in Sources */,
 				77045726251523BE006CC071 /* CommonTextField.swift in Sources */,
+				76FBC99427D7B864005FE78E /* NewCommonCollectionViewHandler.swift in Sources */,
 				776F6E75251ACE6200C1A84B /* CommonFontManager.swift in Sources */,
 				77E9AEEF25198A7E002A8538 /* ExampleViewModel.swift in Sources */,
 				7704575625152523006CC071 /* CommonViewModel.swift in Sources */,

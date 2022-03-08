@@ -10,6 +10,7 @@ public extension UICollectionView {
 
     // MARK: - Common Creators
 
+    @available(*, deprecated, message: "Use NewCommonCollectionViewHandler instead.")
     convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection, _ handler: CommonCollectionViewHandler, _ identifiers: [String]) {
 
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -41,4 +42,30 @@ public extension UICollectionView {
 
     }
 
+    convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection, _ identifiers: [String]) {
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.scrollDirection = direction
+        
+        self.init(frame: .zero, collectionViewLayout: layout)
+        
+        self.backgroundColor = .clear
+        
+        self.showsVerticalScrollIndicator = false
+        self.showsHorizontalScrollIndicator = false
+        
+        self.isPagingEnabled = true
+        self.bounces = false
+        
+        for identifier in identifiers {
+            if let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+                let namespace = projectName.replacingOccurrences(of: "-", with: "_")
+                if let anyClass: AnyClass = NSClassFromString("\(namespace).\(identifier)") {
+                    self.register(anyClass, forCellWithReuseIdentifier: identifier)
+                }
+            }
+        }
+        
+        superview.addSubview(self)
+    }
 }
