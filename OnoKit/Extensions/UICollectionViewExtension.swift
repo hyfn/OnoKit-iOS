@@ -43,20 +43,20 @@ public extension UICollectionView {
     }
 
     convenience init(_ superview: UIView, _ direction: UICollectionView.ScrollDirection, _ identifiers: [String]) {
-        
+
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = direction
-        
+
         self.init(frame: .zero, collectionViewLayout: layout)
-        
+
         self.backgroundColor = .clear
-        
+
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
-        
+
         self.isPagingEnabled = true
         self.bounces = false
-        
+
         for identifier in identifiers {
             if let projectName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
                 let namespace = projectName.replacingOccurrences(of: "-", with: "_")
@@ -65,7 +65,7 @@ public extension UICollectionView {
                 }
             }
         }
-        
+
         superview.addSubview(self)
     }
 }

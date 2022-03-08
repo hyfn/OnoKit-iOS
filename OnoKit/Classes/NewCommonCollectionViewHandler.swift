@@ -15,7 +15,7 @@ open class NewCommonCollectionViewHandler: NSObject, UICollectionViewDelegate, U
 
     let collectionView: UICollectionView
 
-    init(_ collectionView: UICollectionView) {
+    public init(_ collectionView: UICollectionView) {
         self.collectionView = collectionView
         super.init()
 
