@@ -8,16 +8,16 @@ def basePods
 
   # Core
 
-  pod 'ObjectMapper', '~> 3.5.1'
+  pod 'ObjectMapper', '~> 4.2.0'
 
   # UI
 
-  pod 'SnapKit', '~> 5.0.0'
+  pod 'SnapKit', '~> 5.6.0'
   
   # Util
   
-  pod 'KeychainAccess', '~> 4.1.0'
-  pod 'SwiftLint', '~> 0.40.0'
+  pod 'KeychainAccess', '~> 4.2.2'
+  pod 'SwiftLint', '~> 0.49.1'
 
 end
   
